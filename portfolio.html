@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajja Venkata Satwik | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 15px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      display: inline;
+      margin: 0 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* Main content */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    section {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 25px;
+    }
+    h2 {
+      color: #1e3c72;
+      border-bottom: 2px solid #1e3c72;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 i {
+      color: #2a5298;
+    }
+
+    /* About */
+    #about .img-container {
+      width: 160px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 50%;
+      float: left;
+      margin-right: 20px;
+      border: 4px solid #1e3c72;
+    }
+    #about img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Skills */
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .skills li {
+      background: #e0ecff;
+      color: #1e3a8a;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Projects / Education */
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .card {
+      background-color: #f9fafb;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2a5298;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card span {
+      font-weight: bold;
+      color: #444;
+    }
+
+    /* Contact */
+    .contact p a {
+      color: #2a5298;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact p a:hover {
+      text-decoration: underline;
+    }
+    .contact form {
+      margin-top: 20px;
+    }
+    .contact label {
+      font-weight: 600;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      background: #1e3c72;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact button:hover {
+      background: #2a5298;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 18px;
+      background-color: #1f2937;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sajja Venkata Satwik</h1>
+    <p>🚀 Aspiring CSE (AIML) Student | Future Software Innovator</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <div class="img-container">
+        <img src="satwik.jpg" alt="Sajja Venkata Satwik">
+      </div>
+      <p>Hello! I’m Satwik, a passionate learner in Computer Science and AIML at GM University.  
+      I believe in <b>transforming ideas into impactful software</b> and thrive on solving real-world problems through technology.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2><i class="fas fa-code"></i> Skills</h2>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML & CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-robot"></i> Machine Learning (Basics)</li>
+        <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3><i class="fas fa-car"></i> Neural Network Self-Driving Vehicle</h3>
+          <img src="project1.png" alt="Project 1 Screenshot">
+          <p>A neural network model that processes car sensor input and trains the car to avoid traffic.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-comments"></i> Chatbot for Customer Support</h3>
+          <img src="project2.jpg" alt="Project 2 Screenshot">
+          <p>Developed a chatbot to answer customer queries using Python, NLTK, and Flask for web deployment.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-globe"></i> Personal Portfolio Website</h3>
+          <img src="project3.jpg" alt="Project 3 Screenshot">
+          <p>Created a responsive portfolio website using HTML, CSS, and JavaScript to showcase skills and projects effectively.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="cards">
+        <div class="card">
+          <h3><i class="fas fa-university"></i> B.Tech (AIML)</h3>
+          <p><span>2023 – 2027</span></p>
+          <p>Currently pursuing B.Tech in Artificial Intelligence & Machine Learning.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-school"></i> 2nd PUC</h3>
+          <p><span>2022 – 2023</span></p>
+          <p>Completed Pre-University Course (Science stream).</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-book"></i> 10th Grade</h3>
+          <p><span>2021 – 2022</span></p>
+          <p>Completed 10th grade with excellent academic performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sajjavsatwik@gmail.com">sajjavsatwik@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: <a href="tel:8105846029">8105846029</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/sajja-venkata-satwik-60a7a8297/" target="_blank">linkedin.com/in/sajja-venkata-satwik</a></p>
+
+      <h3>Send me a message</h3>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sajja Venkata Satwik. All rights reserved.</p>
+  </footer>
+</body>
+</html>
